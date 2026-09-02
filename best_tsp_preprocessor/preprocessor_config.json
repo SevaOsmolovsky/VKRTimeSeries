@@ -1,0 +1,92 @@
+{
+  "categorical_columns": [],
+  "categorical_encoder": null,
+  "conditional_columns": [],
+  "context_length": 64,
+  "control_columns": [],
+  "encode_categorical": true,
+  "feature_extractor_type": "TimeSeriesPreprocessor",
+  "freq": "0 days 01:00:00",
+  "frequency_mapping": {
+    "10min": 4,
+    "15min": 5,
+    "2min": 2,
+    "30min": 6,
+    "5min": 3,
+    "D": 8,
+    "H": 7,
+    "W": 9,
+    "d": 8,
+    "h": 7,
+    "min": 1,
+    "oov": 0
+  },
+  "id_columns": [],
+  "observable_columns": [],
+  "other_columns_to_scale": null,
+  "prediction_length": null,
+  "scale_categorical_columns": true,
+  "scaler_args": {},
+  "scaler_dict": {},
+  "scaler_type": "standard",
+  "scaling": true,
+  "scaling_id_columns": [],
+  "scaling_id_columns_types": [],
+  "static_categorical_columns": [],
+  "target_columns": [
+    "HUFL",
+    "HULL",
+    "MUFL",
+    "MULL",
+    "LUFL",
+    "LULL",
+    "OT"
+  ],
+  "target_scaler_dict": {
+    "0": {
+      "copy": true,
+      "feature_names_in_": [
+        "HUFL",
+        "HULL",
+        "MUFL",
+        "MULL",
+        "LUFL",
+        "LULL",
+        "OT"
+      ],
+      "mean_": [
+        7.937742245659508,
+        2.0210386567335163,
+        5.079770601157927,
+        0.7461858799957015,
+        2.781762386375555,
+        0.7884531235540096,
+        17.1282616982271
+      ],
+      "n_features_in_": 7,
+      "n_samples_seen_": 8640,
+      "scale_": [
+        5.812749409143771,
+        2.0901046504076,
+        5.518793579036245,
+        1.9263792741329822,
+        1.0235226594952194,
+        0.6302366362251923,
+        9.176491024944333
+      ],
+      "var_": [
+        33.78805569350125,
+        4.368537449655475,
+        30.457082568011693,
+        3.710937107809115,
+        1.0475986345001667,
+        0.39719821764044544,
+        84.20798753088391
+      ],
+      "with_mean": true,
+      "with_std": true
+    }
+  },
+  "time_series_task": "forecasting",
+  "timestamp_column": "date"
+}
