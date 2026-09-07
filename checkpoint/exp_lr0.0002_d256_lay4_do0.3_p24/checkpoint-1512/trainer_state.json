@@ -1,0 +1,133 @@
+{
+  "best_global_step": 252,
+  "best_metric": 0.776768147945404,
+  "best_model_checkpoint": "./checkpoint/exp_lr0.0002_d256_lay4_do0.3_p24\\checkpoint-252",
+  "epoch": 6.0,
+  "eval_steps": 500,
+  "global_step": 1512,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 1.0,
+      "grad_norm": 2.1549060344696045,
+      "learning_rate": 0.00019003968253968254,
+      "loss": 0.37590459793333025,
+      "step": 252
+    },
+    {
+      "epoch": 1.0,
+      "eval_loss": 0.776768147945404,
+      "eval_runtime": 54.5616,
+      "eval_samples_per_second": 51.043,
+      "eval_steps_per_second": 1.613,
+      "step": 252
+    },
+    {
+      "epoch": 2.0,
+      "grad_norm": 6.695432186126709,
+      "learning_rate": 0.00018003968253968254,
+      "loss": 0.32043033175998265,
+      "step": 504
+    },
+    {
+      "epoch": 2.0,
+      "eval_loss": 0.7822685241699219,
+      "eval_runtime": 54.5139,
+      "eval_samples_per_second": 51.088,
+      "eval_steps_per_second": 1.614,
+      "step": 504
+    },
+    {
+      "epoch": 3.0,
+      "grad_norm": 1.5738030672073364,
+      "learning_rate": 0.00017003968253968254,
+      "loss": 0.28286095271034845,
+      "step": 756
+    },
+    {
+      "epoch": 3.0,
+      "eval_loss": 0.8390718698501587,
+      "eval_runtime": 54.6582,
+      "eval_samples_per_second": 50.953,
+      "eval_steps_per_second": 1.61,
+      "step": 756
+    },
+    {
+      "epoch": 4.0,
+      "grad_norm": 3.888500452041626,
+      "learning_rate": 0.00016003968253968255,
+      "loss": 0.24142984359983413,
+      "step": 1008
+    },
+    {
+      "epoch": 4.0,
+      "eval_loss": 0.8760395646095276,
+      "eval_runtime": 54.8216,
+      "eval_samples_per_second": 50.801,
+      "eval_steps_per_second": 1.605,
+      "step": 1008
+    },
+    {
+      "epoch": 5.0,
+      "grad_norm": 3.7859115600585938,
+      "learning_rate": 0.00015003968253968255,
+      "loss": 0.1998506879049634,
+      "step": 1260
+    },
+    {
+      "epoch": 5.0,
+      "eval_loss": 0.8719133734703064,
+      "eval_runtime": 54.551,
+      "eval_samples_per_second": 51.053,
+      "eval_steps_per_second": 1.613,
+      "step": 1260
+    },
+    {
+      "epoch": 6.0,
+      "grad_norm": 3.4025650024414062,
+      "learning_rate": 0.00014003968253968255,
+      "loss": 0.1668979251195514,
+      "step": 1512
+    },
+    {
+      "epoch": 6.0,
+      "eval_loss": 0.8767935633659363,
+      "eval_runtime": 54.6084,
+      "eval_samples_per_second": 50.999,
+      "eval_steps_per_second": 1.611,
+      "step": 1512
+    }
+  ],
+  "logging_steps": 500,
+  "max_steps": 5040,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 20,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "EarlyStoppingCallback": {
+      "args": {
+        "early_stopping_patience": 5,
+        "early_stopping_threshold": 0.001
+      },
+      "attributes": {
+        "early_stopping_patience_counter": 5
+      }
+    },
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": true
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 3821398674702336.0,
+  "train_batch_size": 32,
+  "trial_name": null,
+  "trial_params": null
+}
